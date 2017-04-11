@@ -50,7 +50,7 @@
             $output = $output->{"output1"};
             $output = $output->{"value"};
             $output = $output->{"Values"};
-            return $output[0][7];
+            return $output[0][8];
         }
         catch (HttpException $ex)
         {

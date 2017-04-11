@@ -102,7 +102,8 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/JavaScript">
         var video = document.getElementById('video');
-        window.addEventListener("DOMContentLoaded", function(){
+        
+	window.addEventListener("DOMContentLoaded", function(){
             navigator.getUserMedia = navigator.getUserMedia ||
                 navigator.webkitGetUserMedia ||
                 navigator.mozGetUserMedia;
@@ -121,7 +122,7 @@
                 );
             }
         });
-
+	
         $("#searchBtn").click(function () {
 
            var paramArray = [
@@ -255,7 +256,6 @@
                     dataType : "json",
                     data: data,
                     success: function(msg){
-                        alert(msg.msg);
                         if(msg.msg == "success") {
                             alert("Login success");
                             $("#myModal").modal('hide');

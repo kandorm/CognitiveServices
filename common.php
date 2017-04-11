@@ -11,7 +11,7 @@
     $FACE_VERIFY_URL = 'https://westus.api.cognitive.microsoft.com/face/v1.0/verify';
     $PREDICTION_URL = 'https://ussouthcentral.services.azureml.net/workspaces/4def3382708a44f8b81e666369d6d232/services/b8186afb8ade4e36a0056b09676fed0c/execute?api-version=2.0&details=true';
     $PREDICTION_KEY = 'psFLzoVJY8xxVPjoKdfmroUAsumiBTOH1AO1pzTV9SkipkgYQbvOmj1XlBRqp/IsaHc58DfCR6J++dziyJwk2Q==';
-    $HOME_PAGE = 'http://localhost:8080';
+    $HOME_PAGE = 'http://usedcarvaluation.southeastasia.cloudapp.azure.com/';
     function base64ToImg($image_code) {
         $img = str_replace('data:image/png;base64,', '', $image_code);
         $img = str_replace(' ', '+', $img);
